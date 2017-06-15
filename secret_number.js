@@ -1,12 +1,12 @@
 'use strict';
-module.exports = function() {
+module.exports = function (){
 
-  let secretNumber = (function(){
-    let randomNumber = 0;
+    let generatedNumber = (Math.random()*1000001);
+
     return function(){
-      randomNumber = Math.floor(Math.random()*1000001);
-      return randomNumber;
-    }
-  })();
-
+      return generatedNumber;
+    };
 };
+
+
+
